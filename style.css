@@ -1,6 +1,55 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
+    font-family: "Poppins", sans-serif;
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+:root{
+    /* COLORS */
+    --body-color : #121E3D;
+    --side-bar : #000000;
+    --primary-color : #121E3D;
+    --primary-color-light : #ffffff;
+    --toggle-color : #121E3D;
+    --text-color : #ffffff;
+    /* TRANSITION */
+    --tran-02 : all 0.2s ease;
+    --tran-03 : all 0.3s ease;
+    --tran-04 : all 0.4s ease;
+    --tran-05 : all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+}
+
+/* SideBar CSS */
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background: var(--side-bar);
+    padding: 15px 15px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .image-text img{
+    width: 50px;
+}
+
+.text{
+    color: var(--text-color);
 }
