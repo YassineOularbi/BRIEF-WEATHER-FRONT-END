@@ -11,12 +11,10 @@
 
 :root{
     /* COLORS */
-    --body-color : #121E3D;
-    --side-bar : #000000;
-    --primary-color : #121E3D;
-    --primary-color-light : #ffffff;
-    --toggle-color : #121E3D;
-    --text-color : #ffffff;
+    --light-color: #E1ECF8;
+    --dark-color: #121E3D;
+    --sidebar-light: rgba(225, 236, 248, 0.8);
+    --sidebar-dark: rgba(18, 30, 61, 0.8);
     /* TRANSITION */
     --tran-02 : all 0.2s ease;
     --tran-03 : all 0.3s ease;
@@ -26,30 +24,89 @@
 
 body{
     height: 100vh;
-    background: var(--body-color);
+    background: var(--dark-color);
 }
 
 /* SideBar CSS */
 
 .sidebar{
+    background: var(--sidebar-light);
+    border-radius: 20px;
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 250px;
-    background: var(--side-bar);
-    padding: 15px 15px;
+    height: 95%;
+    width: 170px;
+    padding: 10px 10px;
+    margin: 15px;
 }
-
-.sidebar header .image-text{
-    display: flex;
-    align-items: center;
+.sidebar .brand-name{
+    font-weight: bold;
 }
-
+.menu{
+    height: 495px;
+}
+.search-bar{
+    height: 30px;
+    background: var(--dark-color);
+    border-radius: 5px;
+}
+.search{
+    background: var(--light-color);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 25px;
+}
+.search::placeholder {
+    font-size: x-small;
+    padding: 5px;
+    color: var(--dark-color);
+}
 .sidebar .image-text img{
     width: 50px;
 }
+.sidebar .image-text{
+    border-bottom: 1px solid var(--dark-color);
 
+}
 .text{
-    color: var(--text-color);
+    color: var(--dark-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sidebar li{
+    padding-left: 10px;
+    font-size: 18px;
+}
+.sidebar i{
+    color: var(--dark-color);
+}
+.sidebar span{
+    font-size: 13px;
+    color: var(--dark-color);
+}
+.nav-link{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transform: var(--tran-04);
+}
+
+.nav-link:hover{
+    background: var(--dark-color);
+    height: 30px;
+    border-radius: 5px;
+}
+.nav-link:hover i {    
+    color: var(--light-color);
+}
+.nav-link:hover .nav-text {    
+    color: var(--light-color);
+}
+.active i{
+    color: var(--light-color);
 }

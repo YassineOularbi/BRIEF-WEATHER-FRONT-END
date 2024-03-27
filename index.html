@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,65 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- BoxIcons Css Link -->
 </head>
+
 <body>
     <nav class="sidebar">
         <header>
-            <div class="image-text">
+            <div class="image-text d-flex align-items-center">
                 <span class="image">
                     <img src="pictures/Dark-mode-logo.png" alt="logo">
                 </span>
-            <div class="text header-text">
-                <span class="brand-name">Weather Horti.</span>
-            </div>
+                <div class="text header-text">
+                    <span class="brand-name">Weather Horti.</span>
+                </div>
             </div>
         </header>
+        <div class="menu-bar">
+            <div class="menu d-flex flex-column justify-content-between">
+                <div class="first-option">
+                    <li class="nav-link search-bar active my-3">
+                        <i class='bx bx-search-alt icon'></i>
+                        <input class=" search col-9" type="text" placeholder="Search for city...">
+                    </li>
+                    <div class="menu-links">
+                        <li class="nav-link my-2">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </li>
+                        <li class="nav-link my-2">
+                            <i class='bx bxs-map-alt icon'></i>
+                            <span class="text nav-text">Weather map</span>
+                        </li>
+                        <li class="nav-link my-2">
+                            <i class='bx bxs-objects-vertical-bottom icon'></i>
+                            <span class="text nav-text">Analytics horti.</span>
+                        </li>
+                        <li class="nav-link my-2">
+                            <i class='bx bxs-archive-in icon'></i>
+                            <span class="text nav-text">Archive</span>
+                        </li>
+                        <li class="nav-link my-2">
+                            <i class='bx bxs-bell-ring bx-tada icon'></i>
+                            <span class="text nav-text">Notification</span>
+                        </li>
+                    </div>
+                </div>
+                <div class="last-option">
+                    <li class="nav-link my-2">
+                        <i class='bx bxs-cog icon'></i>
+                        <span class="text nav-text">Setting</span>
+                    </li>
+                    <li class="nav-link my-2">
+                        <i class='bx bx-log-out-circle icon'></i>
+                        <span class="text nav-text">Logout</span>
+                    </li>
+                    <li class="nav-link my-2">
+                        <i class='bx bxs-moon icon'></i>
+                        <span class="text nav-text">Dark Mode</span>
+                    </li>
+                </div>
+            </div>
+        </div>
     </nav>
     <!-- BoxIcons Js Link -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -41,4 +89,5 @@
         crossorigin="anonymous"></script>
     <!-- bootstrap js link -->
 </body>
+
 </html>
