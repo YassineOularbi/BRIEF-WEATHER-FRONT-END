@@ -33,7 +33,7 @@ body{
     background: var(--sidebar-light);
     border-radius: 20px;
     height: 95%;
-    width: 170px;
+    width: 200px;
     padding: 10px 10px;
     margin: 15px;
 }
@@ -41,7 +41,7 @@ body{
     font-weight: bold;
 }
 .menu{
-    height: 495px;
+    height: 560px;
 }
 .search-bar{
     height: 30px;
@@ -88,7 +88,7 @@ body{
     height: 30px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     cursor: pointer;
     transform: var(--tran-04);
 }
@@ -111,4 +111,39 @@ body{
 /* Home Css */
 .home{
     margin: 15px;
+}
+.body-high{
+    gap : 20px;
+}
+.info-day{
+    color: var(--light-color);
+}
+.weather-now{
+    height: 280px;
+    width: 210px;
+    background-image: url("pictures/bg-dark-4.png");
+    border: 1px solid var(--light-color);
+    border-radius: 20px;
+
+    background-size: cover;
+    color: var(--light-color);
+}
+
+.weather-now span{
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-now h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.weather-now .high-low{
+    gap: 50px;
+}
+.weather-now .high-low p{
+    font-size: 12px;
 }
