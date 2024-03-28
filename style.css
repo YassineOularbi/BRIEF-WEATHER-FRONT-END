@@ -15,8 +15,8 @@
     --dark-color: #121E3D;
     --sidebar-light: rgba(225, 236, 248, 0.8);
     --sidebar-dark: rgba(18, 30, 61, 0.8);
-    --color-lightesse: rgba(225, 236, 248, 0.5);
-    --color-darkesse: rgba(18, 30, 61, 0.5);
+    --color-lightesse: rgba(225, 236, 248, 0.3);
+    --color-darkesse: rgba(18, 30, 61, 0.3);
     /* TRANSITION */
     --tran-02 : all 0.2s ease;
     --tran-03 : all 0.3s ease;
@@ -294,4 +294,38 @@ body{
 .moon .info-moon span{
     font-size: 12px;
     font-weight: bold;
+}
+.wind img{
+    height: 90px;
+}
+.wind{
+    border: 1px solid var(--light-color);
+    border-radius: 20px;
+    width: 360px;
+    height: 100px;
+    background-color: var(--color-lightesse);
+}
+
+.wind span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.wind .average-wind {
+    border-bottom: 1px solid var(--light-color);
+}
+.wind .info-wind span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.wind .info-wind .average span, 
+.wind .info-wind .sudden span {
+    font-size: 10px;
+    font-weight: bold;
+}
+.wind .info-wind .average p, 
+.wind .info-wind .sudden p {
+    font-size: 9px;
+    font-weight: 100;
+    color: var(--light-color);
+    margin: 0;
 }
