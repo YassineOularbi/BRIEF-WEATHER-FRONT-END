@@ -355,8 +355,47 @@
                     <img src="pictures/compass.png" alt="moon">
                 </div>
             </div>
-            <div class="other-weathers">
-                
+            <div class="other-weathers d-flex flex-row justify-content-between">
+                <div class="sun p-2">
+                    <div class="sun-target d-flex flex-column">
+                        <div>
+                            <img class="sun-move" src="icons/sun.png" alt="">
+                            <img class="target" src="icons/sun-target.png" alt="">
+                        </div>
+                        <div class=" d-flex flex-row justify-content-between">
+                            <img src="icons/sunrise.png" alt="">
+                            <img src="icons/sunset.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="state-sun d-flex flex-row justify-content-between">
+                            <span>Sunrise</span>
+                            <span>Sunset</span>
+                        </div>
+                        <div class="time-sun d-flex flex-row justify-content-between">
+                            <span>6 PM</span>
+                            <span>6 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rainfall d-flex flex-column py-1 px-3">
+                    <span>Rainfall density</span>
+                    <div class="rainfall-info d-flex flex-row justify-content-around">
+                        <div class="d-flex flex-column">
+                            <span>12</span>
+                            <p>mm</p>
+                            <h6>Medium</h6>
+                        </div>
+                        <img src="icons/snow.png" alt="snow">
+                    </div>
+                </div>
+                <div class="humidity d-flex flex-column py-1 px-3">
+                    <span>humidity percent</span>
+                    <div class="humidity-info d-flex flex-column align-items-center">
+                        <img src="icons/percent-humidity.png" alt="">
+                        <span>5O%</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

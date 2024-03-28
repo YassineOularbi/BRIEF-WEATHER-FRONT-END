@@ -329,3 +329,87 @@ body{
     color: var(--light-color);
     margin: 0;
 }
+.other-weathers{
+    width: 750px;
+    height: 120px;
+}
+.sun .sun-target img{
+    width: 30px;
+}
+
+.sun{
+    border: 1px solid var(--light-color);
+    height: 120px;
+    width: 230px;
+    border-radius: 20px;
+}
+.sun .sun-target{
+    gap: 10px;
+    border-bottom: 1px solid var(--light-color);
+}
+.sun .sun-target .target{
+    width: 180px;
+    padding-left: 25px;
+}
+.sun .state-sun span{
+    font-size: 10px;
+    font-weight: bold;
+}
+.sun .time-sun span{
+    font-size: 9px;
+    font-weight: 100;
+}
+.sun .sun-target .sun-move{
+    position: absolute;
+    left: 655px;
+}
+.rainfall{
+    border: 1px solid var(--light-color);
+    height: 120px;
+    width: 230px;
+    border-radius: 20px;
+}
+.rainfall .rainfall-info img{
+    height: 85px;
+}
+.rainfall span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.rainfall .rainfall-info div span{
+    font-size: 40px;
+    font-weight: bold;
+}
+.rainfall .rainfall-info div p{
+    font-size: 10px;
+    font-weight: 100;
+    color: var(--light-color);
+    margin: 0;
+}
+.rainfall .rainfall-info div h6{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--light-color);
+    margin: 0;
+}
+.humidity{
+    border: 1px solid var(--light-color);
+    height: 120px;
+    width: 230px;
+    border-radius: 20px;
+}
+.humidity .humidity-info img{
+    height: 85px;
+}
+.humidity span{
+    font-size: 12px;
+    font-weight: 100;
+    color: var(--light-color);
+}
+.humidity .humidity-info span{
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    padding-top: 45px;
+    color: var(--light-color);
+}
