@@ -147,3 +147,55 @@ body{
 .weather-now .high-low p{
     font-size: 12px;
 }
+.weather-daily{
+    height: 240px;
+    width: 210px;
+    border: 1px solid var(--light-color);
+    border-radius: 20px;
+}
+.daily-title{
+    gap: 10px;
+    border-bottom: 1px solid var(--light-color);
+}
+.weather-daily .daily-title i,span{
+    color: var(--light-color);
+}
+.weather-daily .daily-title span{
+    font-size: 12px;
+    font-weight: 100;
+}
+.days-forecast{
+    padding-top: 10px;
+    gap: 10px;
+}
+.day{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.day span{
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    width: 40px;
+}
+.day .day-weather-img{
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    width: 40px;
+}
+.day .day-weather-img img{
+    height: 15px;
+}
+.day p{
+    color: var(--light-color);
+    display: block;
+    font-size: 11px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.day img{
+    height: 15px;
+}
