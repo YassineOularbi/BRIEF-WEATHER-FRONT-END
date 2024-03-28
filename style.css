@@ -24,6 +24,7 @@
 
 body{
     height: 100vh;
+    gap: 10px;
     background: var(--dark-color);
 }
 
@@ -41,7 +42,7 @@ body{
     font-weight: bold;
 }
 .menu{
-    height: 560px;
+    height: 500px;
 }
 .search-bar{
     height: 30px;
@@ -110,10 +111,13 @@ body{
 /* end SideBar */
 /* Home Css */
 .home{
+    gap : 40px;
     margin: 15px;
 }
 .body-high{
-    gap : 20px;
+    height: 555px;
+    width: 220px;
+    gap : 10px;
 }
 .info-day{
     color: var(--light-color);
@@ -142,7 +146,7 @@ body{
     margin: 0;
 }
 .weather-now .high-low{
-    gap: 50px;
+    gap: 30px;
 }
 .weather-now .high-low p{
     font-size: 12px;
@@ -165,7 +169,7 @@ body{
     font-weight: 100;
 }
 .days-forecast{
-    padding-top: 10px;
+    padding-top: 5px;
     gap: 10px;
 }
 .day{
@@ -198,4 +202,56 @@ body{
 }
 .day img{
     height: 15px;
+}
+.body-medium{
+    height: 555px;
+    width: 750px;
+    gap: 10px;
+}
+.body-medium .filtrer{
+    height: 48px;
+    width: 500px;
+    background-color: var(--light-color);
+    border-radius: 20px;
+}
+.body-medium .filtrer .filtre-item{
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 35px;
+}
+.filtre-item.filtre-active {
+    border-radius: 30px;
+    background-color: var(--dark-color);
+}
+
+.history-weather{
+    width: 750px;
+}
+.history-weather .month{
+    align-items: center;
+    border: 1px solid var(--light-color);
+    border-radius: 20px;
+}
+.history-weather .month span{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--light-color);
+}
+.history-weather .month img{
+    height: 40px;
+    width: auto;
+}
+.prevetions{
+    border: 1px solid var(--light-color);
+    width: 750px;
+    height: 155px;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+.prevetions .prev-title{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 100;
+    border-bottom: 1px solid var(--light-color);
 }

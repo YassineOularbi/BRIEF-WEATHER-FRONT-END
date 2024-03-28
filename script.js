@@ -1,4 +1,4 @@
-/*const apiKey = '517bee7165f36c269ad0336a4dcf4065';
+const apiKey = '517bee7165f36c269ad0336a4dcf4065';
 const city = 'khenifra';
 let weatherdt ={};
 let weatherdtSearch ={};
@@ -29,7 +29,7 @@ document.getElementById('low-temp').textContent = ' Low : ' +weatherdt.main.temp
 
 },1000)
 
-const key = "244155d43b7fc901f0f438ae76092427";
+/*const key = "244155d43b7fc901f0f438ae76092427";
 
 async function searchWeather() {
     let villeInput = 'khenifra';

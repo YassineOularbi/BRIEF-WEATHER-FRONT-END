@@ -38,38 +38,38 @@
                         <input class=" search col-9" id="search" type="text" placeholder="Search for city...">
                     </li>
                     <div class="menu-links">
-                        <li class="nav-link my-3">
+                        <li class="nav-link my-2">
                             <i class='bx bxs-dashboard icon'></i>
                             <span class="text nav-text">Dashboard</span>
                         </li>
-                        <li class="nav-link my-3">
+                        <li class="nav-link my-2">
                             <i class='bx bxs-map-alt icon'></i>
                             <span class="text nav-text">Weather map</span>
                         </li>
-                        <li class="nav-link my-3">
+                        <li class="nav-link my-2">
                             <i class='bx bxs-objects-vertical-bottom icon'></i>
                             <span class="text nav-text">Analytics horti.</span>
                         </li>
-                        <li class="nav-link my-3">
+                        <li class="nav-link my-2">
                             <i class='bx bxs-archive-in icon'></i>
                             <span class="text nav-text">Archive</span>
                         </li>
-                        <li class="nav-link my-3">
+                        <li class="nav-link my-2">
                             <i class='bx bxs-bell-ring bx-tada icon'></i>
                             <span class="text nav-text">Notification</span>
                         </li>
                     </div>
                 </div>
                 <div class="last-option">
-                    <li class="nav-link my-3">
+                    <li class="nav-link my-2">
                         <i class='bx bxs-cog icon'></i>
                         <span class="text nav-text">Setting</span>
                     </li>
-                    <li class="nav-link my-3">
+                    <li class="nav-link my-2">
                         <i class='bx bx-log-out-circle icon'></i>
                         <span class="text nav-text">Logout</span>
                     </li>
-                    <li class="nav-link my-3">
+                    <li class="nav-link my-2">
                         <i class='bx bxs-moon icon'></i>
                         <span class="text nav-text">Dark Mode</span>
                     </li>
@@ -89,7 +89,6 @@
                  <span id="longitude"></span>
                  <img class="my-2" style="width:100px; height: auto;" src="icons/Rainy.png">
                  <h1 id="temperature"></h1>
-                 <p></p>
                  <div class="high-low d-flex flex-row">
                     <p id="high-temp"></p>
                     <p id="low-temp"></p>
@@ -100,7 +99,7 @@
                     <i class='bx bx-calendar'></i>
                     <span>Daily forecast</span>
                 </div>
-                <div class="days-forecast d-flex flex-column align-items-between my-1">
+                <div class="days-forecast d-flex flex-column align-items-between">
                 <div class="day Monday">
                     <span>Mon.</span>
                     <div class="day-weather-img">
@@ -167,12 +166,75 @@
                 </div>
             </div>
         </div>
-        <div class="body-medium">
-
-        </div>
-        <div class="body-low">
-
-        </div>
+        <div class="body-medium d-flex flex-column align-items-center">
+            <div class="filtrer d-flex flex-row justify-content-around align-items-center">
+                <span class="filtre-item">Weekly</span>
+                <span class="filtre-item filtre-active" style="color: var(--light-color);">Monthly</span>
+                <span class="filtre-item">Yearly</span>
+            </div>
+            <div class="history-weather d-flex flex-row justify-content-between">
+                <div class="month january d-flex flex-column py-2">
+                    <span>Jan.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month february d-flex flex-column py-2">
+                    <span>Feb.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month march d-flex flex-column py-2">
+                    <span>Mar.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month april d-flex flex-column py-2">
+                    <span>Apr.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month may d-flex flex-column py-2">
+                    <span>May</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month june d-flex flex-column py-2">
+                    <span>Jun.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month july d-flex flex-column py-2">
+                    <span>Jul.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month august d-flex flex-column py-2">
+                    <span>Aug.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month september d-flex flex-column py-2">
+                    <span>Sep.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month october d-flex flex-column py-2">
+                    <span>Oct.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month november d-flex flex-column py-2">
+                    <span>Nov.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+                <div class="month decembre d-flex flex-column py-2">
+                    <span>Dec.</span>
+                    <img src="icons/rain.png" alt="weather">
+                    <span>15 °C</span>
+                </div>
+            </div>
+ 
     </section>
     <!-- BoxIcons Js Link -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
