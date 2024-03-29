@@ -1,4 +1,4 @@
-const apiKey = '517bee7165f36c269ad0336a4dcf4065';
+const apiKey = '18002b8e2a0e5dcc0d2aeda8d5c816e7';
 const city = 'khenifra';
 let weatherdt ={};
 let weatherdtSearch ={};
