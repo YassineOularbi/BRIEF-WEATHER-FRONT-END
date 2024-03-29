@@ -57,12 +57,14 @@ body{
     border-radius: 5px;
     outline: none;
     height: 25px;
+    font-size: 12px; 
 }
 .search::placeholder {
     font-size: x-small;
     padding: 5px;
     color: var(--dark-color);
 }
+
 .sidebar .image-text img{
     width: 50px;
 }
@@ -230,7 +232,7 @@ body{
 
 .history-weather{
     width: 750px;
-    margin-top: 70px;
+    margin-top: 62px;
 }
 .history-weather .month{
     align-items: center;

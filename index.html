@@ -35,7 +35,7 @@
                 <div class="first-option">
                     <li class="nav-link search-bar active my-3">
                         <i onclick="searchWeather()" class='bx bx-search-alt icon'></i>
-                        <input class=" search col-9" id="search" type="text" placeholder="Search for city...">
+                        <input class="search col-9" id="search" type="text" placeholder="Search for city...">
                     </li>
                     <div class="menu-links">
                         <li class="nav-link my-2">
@@ -84,16 +84,16 @@
                 <h5 style="margin: 0;">Today March 10, 2024</h5>
             </div>
             <div class="weather-now d-flex flex-column align-items-center justify-content-around p-1">
-                <h3 id="city-Name" class="pt-2"></h3>
-                <span id="latitude"></span>
-                <span id="longitude"></span>
-                <img class="my-2" style="width:100px; height: auto;" src="pictures/weather-11.png">
-                <h1 id="temperature"></h1>
+                <h3 class="pt-2">Beni Mellal</h3>
+                <span>Latitude : 32.339444</span> 
+                <span>Longitude : -6.360833</span>
+                <img class="my-2" style="width:100px; height: auto;" src="icons/weather-11.png">
+                <h1>10 °C</h1>
                 <div class="high-low d-flex flex-row">
-                    <p id="high-temp"></p>
-                    <p id="low-temp"></p>
+                   <p>High : 10 °C</p>
+                   <p>Low : 5 °C</p>
                 </div>
-            </div>
+           </div>
             <div class="weather-daily p-2 d-flex flex-column ">
                 <div class="daily-title d-flex flex-row px-3 py-1">
                     <i class='bx bx-calendar'></i>
@@ -338,14 +338,14 @@
                     <div class="d-flex flex-column align-content-between" style="width: 200px;">
                         <span class="title-wind">WIND</span>
                         <div class="info-wind average-wind d-flex flex-row justify-content-between">
-                            <span>15</span>
+                            <span id="wind-speed">30</span>
                             <div class="average d-flex flex-column justify-content-center">
                                 <p>km/h</p>
                                 <span>Average wind</span>
                             </div>
                         </div>
                         <div class="info-wind sudden-wind d-flex flex-row justify-content-between">
-                            <span>30</span>
+                            <span id="wind-speed-sudden">15</span>
                             <div class="sudden d-flex flex-column justify-content-center">
                                 <p>km/h</p>
                                 <span>Sudden wind</span>
@@ -373,8 +373,8 @@
                             <span>Sunset</span>
                         </div>
                         <div class="time-sun d-flex flex-row justify-content-between">
-                            <span>6 PM</span>
-                            <span>6 AM</span>
+                            <span id="sunrise">6 PM</span>
+                            <span id="sunset">6 AM</span>
                         </div>
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                     <span>Rainfall density</span>
                     <div class="rainfall-info d-flex flex-row justify-content-around">
                         <div class="d-flex flex-column">
-                            <span>12</span>
+                            <span id="rainfall">15</span>
                             <p>mm</p>
                             <h6>Medium</h6>
                         </div>
@@ -393,7 +393,7 @@
                     <span>humidity percent</span>
                     <div class="humidity-info d-flex flex-column align-items-center">
                         <img src="icons/percent-humidity.png" alt="">
-                        <span>5O%</span>
+                        <span id="humidity">85%</span>
                     </div>
                 </div>
             </div>
