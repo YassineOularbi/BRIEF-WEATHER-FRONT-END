@@ -129,7 +129,7 @@ body{
 .weather-now{
     height: 280px;
     width: 210px;
-    background-image: url("pictures/bg-dark-2.png");
+    background: url("pictures/bg-dark-2.png");
     border: 1px solid var(--light-color);
     border-radius: 20px;
 
@@ -149,11 +149,15 @@ body{
     font-weight: bold;
     margin: 0;
 }
+.weather-now h1, h5{
+    margin: 0;
+}
 .weather-now .high-low{
-    gap: 30px;
+    gap: 20px;
 }
 .weather-now .high-low p{
     font-size: 12px;
+    margin: 0;
 }
 .weather-daily{
     height: 240px;

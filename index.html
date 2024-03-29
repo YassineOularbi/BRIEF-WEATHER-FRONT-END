@@ -80,18 +80,19 @@
     <section class="home d-flex flex-row">
         <div class="body-high d-flex flex-column">
             <div class="info-day">
-                <span>06 : 00 PM</span>
+                <span id="hour-now">06 : 00 PM</span>
                 <h5 style="margin: 0;">Today March 10, 2024</h5>
             </div>
-            <div class="weather-now d-flex flex-column align-items-center justify-content-around p-1">
-                <h3 class="pt-2">Beni Mellal</h3>
-                <span>Latitude : 32.339444</span> 
-                <span>Longitude : -6.360833</span>
-                <img class="my-2" style="width:100px; height: auto;" src="icons/weather-11.png">
-                <h1>10 °C</h1>
+            <div id="weather-now" class="weather-now d-flex flex-column align-items-center justify-content-around p-1">
+                <h3 id="city-Name">Beni Mellal</h3>
+                <span id="latitude">Latitude : 32.339444</span> 
+                <span id="longitude">Longitude : -6.360833</span>
+                <img id="icon-weather" style="width:100px; height: auto;" src="icons/weather-11.png">
+                <h5 id="Sky-state">Sky clear</h5>
+                <h1 id="temperature">10 °C</h1>
                 <div class="high-low d-flex flex-row">
-                   <p>High : 10 °C</p>
-                   <p>Low : 5 °C</p>
+                   <p id="high-temp">High : 10 °C</p>
+                   <p id="low-temp">Low : 5 °C</p>
                 </div>
            </div>
             <div class="weather-daily p-2 d-flex flex-column ">
@@ -359,7 +360,7 @@
                 <div class="sun p-2">
                     <div class="sun-target d-flex flex-column">
                         <div>
-                            <img class="sun-move" src="icons/sun.png" alt="">
+                            <img id="sun-move" class="sun-move" src="icons/sun.png" alt="">
                             <img class="target" src="icons/sun-target.png" alt="">
                         </div>
                         <div class=" d-flex flex-row justify-content-between">
@@ -384,9 +385,9 @@
                         <div class="d-flex flex-column">
                             <span id="rainfall">15</span>
                             <p>mm</p>
-                            <h6>Medium</h6>
+                            <h6 id="rainfall-state">Medium</h6>
                         </div>
-                        <img src="icons/snow.png" alt="snow">
+                        <img id="rainfall-icon" src="icons/snow.png" alt="snow">
                     </div>
                 </div>
                 <div class="humidity d-flex flex-column py-1 px-3">
