@@ -81,7 +81,7 @@
         <div class="body-high d-flex flex-column">
             <div class="info-day">
                 <span id="hour-now">06 : 00 PM</span>
-                <h5 style="margin: 0;">Today March 10, 2024</h5>
+                <h5 id="date-now" style="margin: 0;">Today March 10, 2024</h5>
             </div>
             <div id="weather-now" class="weather-now d-flex flex-column align-items-center justify-content-around p-1">
                 <h3 id="city-Name">Beni Mellal</h3>
@@ -353,7 +353,10 @@
                             </div>
                         </div>
                     </div>
-                    <img src="pictures/compass.png" alt="moon">
+                    <div class="compass-container">
+                        <img src="icons/compass.png" alt="compass" class="compass">
+                        <img src="icons/fleches.png" alt="arrow" class="arrow" id="arrow">
+                    </div>
                 </div>
             </div>
             <div class="other-weathers d-flex flex-row justify-content-between">
@@ -393,8 +396,12 @@
                 <div class="humidity d-flex flex-column py-1 px-3">
                     <span>humidity percent</span>
                     <div class="humidity-info d-flex flex-column align-items-center">
-                        <img src="icons/percent-humidity.png" alt="">
+                        <div id="semi-circle-container" class="semi-circle-container">
+
+                            <div class="bar"></div>
+                        </div>
                         <span id="humidity">85%</span>
+                        <div class="humidity-bar"></div>
                     </div>
                 </div>
             </div>
