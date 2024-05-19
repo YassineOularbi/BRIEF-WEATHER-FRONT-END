@@ -388,8 +388,11 @@ body{
 }
 .sun .sun-target .sun-move{
     position: absolute;
-    left: 670px;
-    bottom: 135px;
+    left: 90px;
+    bottom: 30px;
+}
+.sun .sun-move-target{
+    position: relative;
 }
 .rainfall{
     border: 1px solid var(--light-color);

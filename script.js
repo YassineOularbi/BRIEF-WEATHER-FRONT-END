@@ -1,10 +1,23 @@
 const apiKey = '18002b8e2a0e5dcc0d2aeda8d5c816e7';
 
-async function searchWeather() {
+function searchWeather() {
     let villeInput = document.getElementById("search").value.trim();
 
     if (villeInput !== '') {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${villeInput}&appid=${apiKey}&units=metric&lang=en`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${villeInput}&appid=${apiKey}&units=metric&lang=en`)
+        .then(response => {
+            if(response)
+            return response.json();
+        })
+        .then(response => {
+            Display(response);
+        })
+    }
+}
+async function defaultCity() {
+    let city = 'Béni Mellal'
+
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=en`)
 
         const weatherData = await response.json();
         if(weatherData.cod !== '404'){
@@ -12,10 +25,8 @@ async function searchWeather() {
         } else {
             alert('City not found! try again.');
         }
-    } else {
-        alert('Please enter a city name.');
-    }
 }
+defaultCity();
 
 function Display(weatherData) {
     console.log(weatherData);
@@ -111,14 +122,14 @@ function Display(weatherData) {
     document.getElementById('sunset').textContent = convertirHorodatageUnix(weatherData.sys.sunset);
     if (weatherData.dt <= weatherData.sys.sunset && weatherData.dt >= weatherData.sys.sunrise) {
         if (convertirHorodatageUnix(weatherData.dt) > convertirHorodatageUnix(weatherData.sys.sunrise) && convertirHorodatageUnix(weatherData.dt) < '12:00:00') {
-            sun.style.left = '560px'
-            sun.style.bottom = '135px'
+            sun.style.left = '25px'
+            sun.style.bottom = '0px'
         } else if (convertirHorodatageUnix(weatherData.dt) < convertirHorodatageUnix(weatherData.sys.sunset) && convertirHorodatageUnix(weatherData.dt) > '16:00:00') {
-            sun.style.left = '615px'
-            sun.style.bottom = '157px'
+            sun.style.left = '155px'
+            sun.style.bottom = '0px'
         } else {
-            sun.style.left = '670px'
-            sun.style.bottom = '135px'
+            sun.style.left = '90px'
+            sun.style.bottom = '30px'
         }
     } else {
         if (sun) {
@@ -128,7 +139,7 @@ function Display(weatherData) {
     document.getElementById('humidity').textContent = weatherData.main.humidity+'%';
     if (weatherData.main.humidity >= 75) {
         humidityBar.style.backgroundColor = 'green'
-    } else if (humidityPercentage >= 50) {
+    } else if (weatherData.main.humidity >= 50) {
         humidityBar.style.backgroundColor = 'orange'
     } else {
         humidityBar.style.backgroundColor = 'yellow'
